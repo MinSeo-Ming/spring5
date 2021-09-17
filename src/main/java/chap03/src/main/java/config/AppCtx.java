@@ -1,4 +1,4 @@
-package chap03.src.main.config;
+package chap03.src.main.java.config;
 
 import chap03.src.main.java.ChangePasswordService;
 import chap03.src.main.java.MemberRegisterService;
