@@ -12,11 +12,25 @@ repositories {
 dependencies {
     //  https://mvnrepository.com/artifact/org.springframework/spring-context
     implementation group: 'org.springframework', name: 'spring-context', version: '5.3.3'
-    implementation 'org.aspectj:aspectjweaver:1.8.13'
+    implementation "org.aspectj:aspectjrt:1.9.6"
+
+
+    // https://mvnrepository.com/artifact/org.aspectj/aspectjtools
+    implementation 'org.aspectj:aspectjtools:1.9.6'
+    implementation 'org.aspectj:aspectjrt:1.9.6'
+    implementation 'org.aspectj:aspectjweaver:1.9.6'
+
+
     // https://mvnrepository.com/artifact/org.springframework/spring-test
     testImplementation group: 'org.springframework', name: 'spring-test', version: '5.3.4'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
+//    runtimeOnly 'org.aspectj:aspectjweaver:1.9.6'
+//    runtimeOnly 'org.aspectj:aspectjrt:1.9.6'
+
+
 }
 
 test {
