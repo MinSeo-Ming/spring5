@@ -14,9 +14,22 @@ dependencies {
     implementation group: 'org.springframework', name: 'spring-context', version: '5.3.3'
     implementation 'org.aspectj:aspectjweaver:1.8.13'
     // https://mvnrepository.com/artifact/org.springframework/spring-test
+
     testImplementation group: 'org.springframework', name: 'spring-test', version: '5.3.4'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    //spring jdbc
+    // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+    implementation group: 'org.springframework', name: 'spring-jdbc', version: '5.0.2.RELEASE'
+    //tomcat
+    // https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc
+    implementation group: 'org.apache.tomcat', name: 'tomcat-jdbc', version: '8.5.27'
+    //mysql
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '5.1.45'
+
+
 }
 
 test {
